@@ -1,0 +1,38 @@
+<div id="header_login" class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper green lighten-1">
+          <a href="#" class="left" style="font-size: xx-large; margin-left: 2px;">Meeting</a>
+          <ul id="nav-mobile" class="right">
+            <li><a href="#" onmouseup="exibirAba('aba_login_usuario');">Login</a></li>
+            <li><a href="#" onmouseup="exibirAba('aba_home');">Home</a></li>
+          </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="header_logado" class="navbar-fixed" style="display: none;">
+    <ul id="dropdown1" class="dropdown-content green lighten-4">
+      <li><a href="#!">Perfil</a></li>
+      <li><a href="#!">Configurações</a></li>
+      <li class="divider"></li>
+      <li><a href="#!" onmouseup="deslogarUsuario();">Logout</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper green lighten-1">
+          <a href="#" class="left" style="font-size: xx-large;">Meeting</a>
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                <div class="chip green lighten-3">
+                      <img src="img/foto_perfil.jpg" alt="Contact Person"> 
+                      <span style="font-weight: bold;">Diogo Barbosa</span>
+                </div>
+                <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+</div>
+
+<br/>

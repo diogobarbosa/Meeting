@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speaky</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+        <link rel="stylesheet" href="icons/material.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+
+    <body class="lime lighten-5">
+
+        <div w3-include-html="header.html"></div> 
+
+        <div class="aba" id="aba_chat" w3-include-html="chat.html"></div>
+
+        <div class="container">
+
+            <div class="aba" id="aba_home" w3-include-html="home.html"></div> 
+
+            <div class="aba" id="aba_login_usuario" w3-include-html="login_usuario.html"></div> 
+
+            <div class="aba" id="aba_cadastro_usuario" w3-include-html="cadastro_usuario.html"></div> 
+
+            <div class="aba" id="aba_explorar" w3-include-html="explorar.html"></div>
+
+            <div class="aba" id="aba_contatos" w3-include-html="contatos.html"></div>
+
+            <div class="aba" id="aba_conversas" w3-include-html="conversas.html"></div>
+
+        </div>  
+
+        <div w3-include-html="footer.html"></div> 
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/w3.js"></script>     
+        <script src="js/app.js"></script>
+   
+        <script src="cordova.js"></script>
+
+        <script>
+            w3.includeHTML();
+
+            //Exibe o conteúdo da aba home no momento que a aplicação é carregada.
+            $( document ).ready(function() {
+                $("#aba_home").css("display", "block");
+            });
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="css/app_chat.css">
+
+
+<div id="botaoVoltar" style="z-index: 999; position: fixed; top: 4px; left: 4px;">
+  	<a class="btn-floating btn-large waves-effect waves-light green lighten-3" onmouseup="exibirAba('aba_conversas');"
+  		style="opacity: 0.9;">
+  		<i class="material-icons">arrow_back</i>
+  	</a>
+</div>
+
+<div id="conteudoChat" 
+	style="z-index: 998; position: absolute; top: 0px; left: 0; height: 80%; width: 100%;">
+
+	<div class="row lime lighten-5" style="height: 100%;">
+		<div class="col s12 l12 ">
+	            
+	         <div class="chat-container">
+			  <img src="img/girl_sample02.jpg" alt="Avatar">
+			  <p>Hello. How are you today?</p>
+			  <span class="chat-time-right">11:00</span>
+			</div>
+
+			<div class="chat-container darker">
+			  <img src="img/girl_sample04.jpg" alt="Avatar" class="right">
+			  <p>Hey! I'm fine. Thanks for asking!</p>
+			  <span class="chat-time-left">11:01</span>
+			</div>
+
+			<div class="chat-container">
+			  <img src="img/girl_sample02.jpg" alt="Avatar">
+			  <p>Sweet! So, what do you wanna do today?</p>
+			  <span class="chat-time-right">11:02</span>
+			</div>
+
+			<div class="chat-container darker">
+			  <img src="img/girl_sample04.jpg" alt="Avatar" class="right">
+			  <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+			  <span class="chat-time-left">11:05</span>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="tecladoChat" 
+	style="z-index: 998; position: fixed; bottom: 0px; left: 0; height: 20%; width: 100%;">
+	<div class="row green lighten-4" style="height: 100%;"> 
+		<div class="input-field col s10 l10" style="height: 100%; padding: 0px;" >
+	        <textarea class="materialize-textarea" id="textAreaChat" style="height: 80%;"></textarea>
+	        <label for="textAreaChat">Digite sua mensagem</label>
+		</div>
+
+		<div class="input-field col s2 l2 center" style="height: 100%; padding: 0px;" >
+		  	<a class="btn-floating btn-large waves-effect waves-light green darken-3">
+		  		<i class="material-icons">keyboard_arrow_right</i>
+		  	</a>
+		</div>
+	</div>
+</div>

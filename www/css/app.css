@@ -1,0 +1,22 @@
+
+.aba{
+	display: none;
+}
+
+.imagem-card{
+	height: 180px;
+}
+
+.conteudo-card{
+	height: 80px;
+}
+
+.footer {
+    position: fixed;
+    height: 56px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 997;
+    color: white;
+}
